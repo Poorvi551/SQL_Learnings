@@ -480,7 +480,33 @@
 
    <img width="1907" height="1046" alt="Screenshot 2026-06-29 192328" src="https://github.com/user-attachments/assets/c7897204-5403-4f84-adf6-d8b83f53787b" />
 
-   
+* To view constraints :
+
+      use information_schema
+
+* To check or display tables
+
+      show tables;
+
+      select constraint_name,constraint_type
+      from table_constraints;
+  
+2. RENAME :
+
+* It is used to modify existing database and its objects like tables,view,triggers and procedure etc.
+* Syntax :-
+
+       rename table current_table_name to new_name;
+
+* Ex :
+
+      rename table customer to custom;
+      show tables;
+
+3. ALTER
+  
+
+
 
 
 
