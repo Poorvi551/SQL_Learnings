@@ -619,7 +619,7 @@ from table_name
      Syntax :
           DELETE 
           FROM table_name
-          [WHERE <filter_condition>];
+          [WHERE < filter_condition > ];
     </td>
    </tr>
   </table>
