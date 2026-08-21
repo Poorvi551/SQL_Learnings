@@ -601,7 +601,38 @@ from table_name
     <td>Data cannot be restored</td>
     <td>Data can be restored using rollback</td>
    </tr>
+   <tr>
+    <td>It is used to remove all the records from the table without altering the table structure.</td>
+    <td>It is used to remove the entire table from the database.</td>
+    <td>It is used to remove or delete a particular records.</td>
+   </tr>
+   <tr>
+    <td>
+     Syntax :
+          TRUNCATE TABLE table_name;
+    </td>
+    <td>
+     Syntax :
+          DROP TABLE table_name;
+    </td>
+    <td>
+     Syntax :
+          DELETE 
+          FROM table_name
+          [WHERE <filter_condition>];
+    </td>
+   </tr>
   </table>
+
+***NOTE : To copy the records from one table to another table we use below syntax***
+
+```
+INSERT INTO TABLE2
+select *
+from table1;
+```
+***NOTE : In this case the datatype and no. of columns should be same.***
+***NOTE: In mysql once we drop or truncate the table we can't recover it again but once we delete the record we can get back/recover the record by using rollback***
 
 
 
