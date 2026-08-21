@@ -634,6 +634,44 @@ from table1;
 ***NOTE : In this case the datatype and no. of columns should be same.***
 ***NOTE: In mysql once we drop or truncate the table we can't recover it again but once we delete the record we can get back/recover the record by using rollback***
 
+### 3. Transaction Control Language:
+
+1. COMMIT
+
+ * It is used to save the transaction into database.
+ * Syntax :
+  ```
+  COMMIT;
+  ```
+
+2. ROLLBACK :
+
+* It is used to roll out the transaction and we can start the transaction from the beginning.
+* Syntax :
+  ```
+  ROLLBACK;
+  ```
+
+  3. ROLLBACK TO SAVEPOINT :
+
+  * In this case we can roll out the transaction to the specified save point instead of rolling out the entire transaction.
+  * Syntax :
+    ```
+    ROLLBACK TO save_point_name;
+    ```
+
+    ```
+    set autocommit=0;
+    ```
+
+  4. SAVE POINT
+
+  * It is used to mark the position in database transaction.
+  * Syntax :
+    ```
+    SAVEPOINT save_point_name;
+    ```
+    
 
 
 
