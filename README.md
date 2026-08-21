@@ -1,4 +1,4 @@
-# SQL_Pentagon_Space
+# SQL_Learnings
 
 ## * **Data :-** 
 
