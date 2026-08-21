@@ -538,7 +538,7 @@ ALTER TABLE table_name
 RENAME COLUMN curr_col_name to new_name;
 ```
 
-**// To modify/adding the constraints **
+**// To modify/adding the constraints**
 ```
 ALTER TABLE table_name
 ADD CONSTRAINT constraint_ref_name UNIQUE (column_name)
@@ -557,8 +557,51 @@ DROP/DISABLE/ENABLE CONSTRAINT constraint_ref_name;
 ```
 
 ### 2. Data Manipulation Language
-   
-  
+
+ 1. INSERT
+
+* It is used to insert or add the records to the table.
+* Syntax :
+```
+1. INSERT INTO table_name values(v1,v2...,vn);
+2. INSERT INTO table_name (col1,col2,....,coln) values(v1,v2...,vn);
+3. INSERT INTO table_name select statement;
+```
+2. UPDATE
+
+* It is used to update the existing records (data) in the table.
+* Syntax :
+```
+UPDATE table_name
+SET col1=v1,col2=v2,....,coln=vn
+[WHERE <FILTER_CONDITION>];
+```
+3. DELETE
+
+* It is used to remove or delete a particular records from the table.
+* Syntax :
+```
+DELETE
+from table_name
+[WHERE <filter_condition>];
+```
+
+***NOTE : To copy the records from one table to another table we use below syntax***
+
+* Difference between truncate, delete, and drop
+
+  <table>
+   <tr>
+    <th>TRUNCATE</th>
+    <th>DROP</th>
+    <th>DELETE</th>
+   </tr>
+   <tr>
+    <td>Data cannot be restored</td>
+    <td>Data cannot be restored</td>
+    <td>Data can be restored using rollback</td>
+   </tr>
+  </table>
 
 
 
