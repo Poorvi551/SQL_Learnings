@@ -270,7 +270,7 @@
 
       zeroes=precision-scale
 
-#### **3. Date Format datatype :-**
+### **3. Date Format datatype :-**
 
    * It is used to store the date values.
    * They are of 4 types:
