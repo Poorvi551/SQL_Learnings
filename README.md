@@ -206,10 +206,10 @@
 
               longblob
           
- 2. Number Format Datatype :-
+ ### **2. Number Format Datatype :-**
 
-    * It is used to store number values datatype.
-    * They are of 2 types:
+   * It is used to store number values datatype.
+   * They are of 2 types:
         *1. Integer*
         *2. Decimal*
 
@@ -270,7 +270,7 @@
 
       zeroes=precision-scale
 
-3. Date Format datatype :-
+#### **3. Date Format datatype :-**
 
    * It is used to store the date values.
    * They are of 4 types:
@@ -504,6 +504,60 @@
       show tables;
 
 3. ALTER
+
+* It is used to modify the table structure.
+* Syntax :
+  
+  **// To add a column**
+  ```
+   ALTER TABLE table_name
+   ADD COLUMN COLUMN_NMA DATATYPE [NULL/NOTNULL];
+  ```
+
+ **// To drop a column**
+ ```
+ ALTER TABLE TABLE_NAME
+ DROP COLUMN COLUMN_NAME;
+ ```
+
+**// To change the datatype**
+```
+ ALTER TABLE table_name
+ MODIFY COLUMN_NAME new_datatype;
+```
+
+**// To change not null constraint**
+```
+ALTER TABLE table_name
+MODIFY COLUMN_NAME existing_datatype null;
+```
+
+**// To rename the column**
+```
+ALTER TABLE table_name
+RENAME COLUMN curr_col_name to new_name;
+```
+
+**// To modify/adding the constraints **
+```
+ALTER TABLE table_name
+ADD CONSTRAINT constraint_ref_name UNIQUE (column_name)
+```
+
+**//To add foreign key constraint**
+```
+ALTER TABLE table_name
+ADD CONSTRAINT constraint_ref_name FOREIGN KEY(column_name) REFERENCES parent_table_name(column_name)
+```
+
+**//To drop/disable/enable a constraint**
+```
+ALTER TABLE table_name
+DROP/DISABLE/ENABLE CONSTRAINT constraint_ref_name;
+```
+
+### 2. Data Manipulation Language
+   
   
 
 
